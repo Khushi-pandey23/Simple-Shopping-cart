@@ -1,0 +1,146 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav img{
+    width: 50px;
+    height: 50px;
+}
+
+.menu{
+    display: flex;
+    gap: 15px;
+    color: rgb(163, 161, 161);
+}
+
+.login{
+    display: flex;
+    margin-top: 10px;
+}
+
+.username{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background: rgba(173, 216, 230, 0.516);
+    width: 80px;
+    color: blue;
+    font-weight: 700;
+}
+
+.logout{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background: rgba(240, 128, 128, 0.505);
+    width: 40px;
+}
+
+.container{
+    display: flex;
+    background: rgb(229, 240, 244);
+    height: 80vh;
+    padding:40px;
+    margin: 10px;
+}
+
+.column{
+    flex: 50%;
+    background: white;
+    margin-right: 30px;
+    border-radius: 15px;
+    padding: 30px;
+    height: 77vh;
+}
+
+.addedItems{
+    text-align: center;
+    margin-top: -5px;
+}
+
+.table{
+    height: 24vh;
+}
+
+table, th, td {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.noItems{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.totalAmount{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.booknow{
+    margin-top: 0px;
+}
+
+input{
+    border: none;
+    padding: 10px;
+}
+
+.emailAndPhone{
+    display: flex;
+    margin-right: 65px;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(17, 128, 0, 0.877);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    opacity: .6;    
+}
+
+
+.items{
+    margin: auto;
+    text-align: center;
+}
+
+.item-image{
+    width: 400px;
+}
+
+.cost{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+
+}
+.buttons button{
+    width: 50%;
+    border: none;
+    padding: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}

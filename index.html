@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task17</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <img src="images.jpg" alt="Logo">
+        <div class="menu">
+            <p>Home</p>
+            <p>Services</p>
+            <p>Contact Us</p>
+            <p>About Us</p>
+        </div>
+        <div class="login">
+            <button class="username">Username</button>
+            <button class="logout"><i class="fa fa-sign-out" style="font-size: 20px;color:red"></i></button>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- First column -->
+        <div class="column">
+            <div class="tableAndAmount">
+                <h4 class="addedItems">Added Items</h4>
+                <div class="table">
+                    <table id="table">
+                        <tr>
+                            <th style="width: 70px;">S.No</th>
+                            <th style="width: 500px;">Service Name</th>
+                            <th style="width: 90px;">Price</th>
+                        </tr>
+                    </table>
+                    <div class="noItems" id="noItems">
+                        <img src="info-circle.svg" alt="" style="height: 60px;">
+                        <p style="margin-top: 10px; margin-bottom: 0px;font-size: 20px;">No items Added</p>
+                        <p style="margin-top: 0px;">Add items to the cart from the services bar</p>
+                    </div>
+                </div>
+                <div class="totalAmount">
+                    <h4>Total Amount</h4>
+                    <h4 id="sum"></h4>
+                </div>
+            </div>
+            <div class="booknow">
+                <h4>Book Now</h4>
+                <div class="name">
+                    <p>Full Name</p>
+                    <input type="text" name="" id="name" placeholder="Enter name">
+                </div>
+                <div class="emailAndPhone">
+                    <div class="email">
+                        <p>Email ID</p>
+                        <input type="text" name="" id="email" placeholder="Enter email ID">
+                    </div>
+                    <div class="phone">
+                        <p>Phone Number</p>
+                        <input type="text" name="" id="phone" placeholder="Enter Phone No.">
+                    </div>
+                </div>
+                <button class="btn" id="btn" onclick="bookNow()">Book Now</button>
+                <div id="warning" style="color: red; margin-top: 0px; display:flex;gap:3px;"></div>
+                <div class="confirm" id="confirm"></div>
+            </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="column">
+            <h2 style="margin-top: 0px;">Browse our services</h2>
+            <p>Click on add to cart button to add the services to your cart or press skip</p>
+            <div class="items" id="items">
+                <img src="Dry cleaning.jpeg" alt="" class="item-image" id="item-image" style="width: 320px;">
+                <div class="cost" id="cost">
+                    <h2 id="service-name">Dry Cleaning</h2>
+                    <h2 id="service-cost">$200</h2>
+                </div>
+            </div>
+            <div class="buttons">
+                <button style="color: red; background: rgba(240, 128, 128, 0.208);" onclick="skipItem()">Skip Item <i class="bi bi-dash-circle" style="color: red;"></i></button>
+                <button style="color: green; background: rgba(144, 238, 144, 0.219);" onclick="addItem()">Add Item <i class="bi bi-plus-circle"></i></button>
+            </div>
+            <p style="color: blue; margin-top: 20px;"><i class="bi bi-info-circle"></i> Add the items to the cart and book now</p>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
